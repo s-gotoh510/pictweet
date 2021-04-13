@@ -1,0 +1,15 @@
+<div class="contents row">
+  <%= form_with model: @tweet, local: true do |f| %>
+    <h3>投稿する</h3>
+    <%= f.label :name, 'ニックネーム(最大6文字)' %>
+    <%= f.text_field :name, class: 'form-control' %>
+    
+    <%= f.label :image, '画像URL' %>
+    <%= f.text_field :image, class: 'form-control' %>
+    
+    <%= f.label :text, '投稿本文' %>
+    <%= f.text_area :text, rows: 10, cols: 30, class: 'form-control' %>
+    
+    <%= f.submit "登録", class: 'btn-block btn-white vertical-btn' %>
+  <% end %>
+</div>
