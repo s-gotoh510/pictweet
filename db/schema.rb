@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_12_032206) do
+ActiveRecord::Schema.define(version: 2021_04_14_053833) do
+
+# Could not dump table "comments" because of following ActiveRecord::StatementInvalid
+#   Mysql2::Error: Unknown table 'check_constraints' in information_schema
 
 # Could not dump table "tweets" because of following ActiveRecord::StatementInvalid
+#   Mysql2::Error: Unknown table 'check_constraints' in information_schema
+
+# Could not dump table "users" because of following ActiveRecord::StatementInvalid
 #   Mysql2::Error: Unknown table 'check_constraints' in information_schema
 
 end
